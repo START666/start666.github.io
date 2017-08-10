@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  
+  
+    
+    <entry>
+      <title><![CDATA[从零开始学HTML5+CSS3 —— 第一课：HTML5+CSS3简介]]></title>
+      <url>http://start666.github.io/2017/03/08/css3-first-tutorial/</url>
+      <content type="html"><![CDATA[<h2 id="背景介绍："><a href="#背景介绍：" class="headerlink" title="背景介绍："></a>背景介绍：</h2><p>博主计算机专业，在学校中学习过基本的HTML和CSS，但是学校教学内容过于陈旧，制作出的网页完全是10年前的风格。最近为了建立自己的博客，又重新找出了被我丢在书架一角的《HTML5 + CSS3 从入门到精通》。希望通过自学和实践能够将学校书本上的知识联系起来，充实自我。</p>
+<p>这个系列文章将作为我的学习笔记，同时也分享给有需要的朋友。如有错误欢迎指出，欢迎交流。</p>
+<h1 id="第一课：什么是HTML5？"><a href="#第一课：什么是HTML5？" class="headerlink" title="第一课：什么是HTML5？"></a>第一课：什么是HTML5？</h1><p>来自维基百科中<a href="https://zh.wikipedia.org/wiki/HTML5" target="_blank" rel="external">HTML5</a>字条：</p>
+<blockquote>
+<p>HTML5是HTML最新的修订版本，2014年10月由万维网联盟(W3C)完成标准制定。目标是替换1999年所制定的HTML 4.01和XHTML 1.0标准，以期能在互联网应用迅速发展的时候，使网络标准达到匹配当代的网络需求。</p>
+</blockquote>
+<p>现如今大家谈论HTML5的时候一般都是指HTML、CSS、JavaScript在内的一整套技术组合。</p>
+<h2 id="先从HTML说起"><a href="#先从HTML说起" class="headerlink" title="先从HTML说起"></a>先从HTML说起</h2><p>HTML是网页的主体，它是一种标准的标记语言供浏览器生成可视化的网页。</p>
+<h3 id="第一个HTML页面"><a href="#第一个HTML页面" class="headerlink" title="第一个HTML页面"></a>第一个HTML页面</h3><p>万物皆始于Hello World。</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line"><span class="meta">&lt;!DOCTYPE html&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">head</span>&gt;</span></div><div class="line">        <span class="tag">&lt;<span class="name">meta</span> <span class="attr">charser</span>=<span class="string">"UTF-8"</span>&gt;</span></div><div class="line">        <span class="tag">&lt;<span class="name">title</span>&gt;</span>First page of HTML<span class="tag">&lt;/<span class="name">title</span>&gt;</span></div><div class="line">    <span class="tag">&lt;/<span class="name">head</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">body</span>&gt;</span></div><div class="line">        <span class="tag">&lt;<span class="name">h1</span>&gt;</span>Hello World!<span class="tag">&lt;/<span class="name">h1</span>&gt;</span></div><div class="line">    <span class="tag">&lt;/<span class="name">body</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></div></pre></td></tr></table></figure>
+<p>将这段代码复制到记事本，储存成index.html，然后再用浏览器打开，再回来告诉我你们看到了什么。</p>
+<p>如果没有看到大大的Hello World显示在你的浏览器中，请在下面留言，我们来找出你到底哪一步出错了。</p>
+<h3 id="接下来解释一下这段代码都干了些什么"><a href="#接下来解释一下这段代码都干了些什么" class="headerlink" title="接下来解释一下这段代码都干了些什么"></a>接下来解释一下这段代码都干了些什么</h3><p>首先，所有用“&lt; &gt;”包括起来的都是标签，标签中有“／”的表示这里是结束标签。</p>
+<ul>
+<li><code>&lt;!DOCTYPE html&gt;</code> 这个标签告诉浏览器这个是html文件。</li>
+<li><code>&lt;html&gt; &lt;/html&gt;</code> 所有的html代码都要在这个标签中。</li>
+<li><code>&lt;head&gt; &lt;/head&gt;</code> 所有的设置都在这个标签中，比如连接的文件、字符集等等。</li>
+<li><code>&lt;body&gt; &lt;/body&gt;</code> 这里放的代码就是你想要浏览器显示的内容。</li>
+<li><code>&lt;title&gt; &lt;/title&gt;</code> 这是网页的名字。</li>
+<li><code>&lt;h1&gt; &lt;/h1&gt;</code> 所有的“h1”、“h2”、“h3”、…都是表示是标题。</li>
+</ul>
+<h2 id="CSS又是什么鬼？"><a href="#CSS又是什么鬼？" class="headerlink" title="CSS又是什么鬼？"></a>CSS又是什么鬼？</h2><p>我们上一步已经生成了一个最简单的HTML页面了，但是非常单调，与我们日常浏览的网页差距很大。那么这里我就要请CSS来帮忙了，它的作用就是美化我们HTML文件在浏览器中生成的页面。</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line"><span class="selector-tag">body</span>&#123;</div><div class="line">    <span class="attribute">background-color</span>: lightblue;</div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="selector-tag">h1</span>&#123;</div><div class="line">    <span class="attribute">color</span>: red;</div><div class="line">    <span class="attribute">text-align</span>:center;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p>将上面那段代码保存成styles.css, 和刚刚的index.html放在一起。</p>
+<p>然后我们再用记事本打开index.html做一些小变更，我们在<head>后加上这段代码：</head></p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">link</span> <span class="attr">rel</span>=<span class="string">"stylesheet"</span> <span class="attr">href</span>=<span class="string">"styles.css"</span>&gt;</span></div></pre></td></tr></table></figure>
+<p>这样就将styles.css和index.html连接起来了。</p>
+<p>再用浏览器打开index.html看看发生了什么？</p>
+<p><img src="http://start666.github.io/images/hello-world-html-css.png" alt=""></p>
+<p>如果不一样，请在下方留言，我将尽快和你一起解决。</p>
+<h3 id="CSS又发生了什么？"><a href="#CSS又发生了什么？" class="headerlink" title="CSS又发生了什么？"></a>CSS又发生了什么？</h3><p>在CSS文件中定义了各个标签的样式，对应的HTML文件中的标签会应用在CSS中的样式。这样的好处就是可以统一网页的格式，做到样式的重用。</p>
+]]></content>
+    </entry>
+    
+    <entry>
+      <title><![CDATA[Java中int和Integer的区别]]></title>
+      <url>http://start666.github.io/2017/02/17/Java-difference-between-int-and-Integer/</url>
+      <content type="html"><![CDATA[<h2 id="Java中int和Integer的例子"><a href="#Java中int和Integer的例子" class="headerlink" title="Java中int和Integer的例子"></a>Java中int和Integer的例子</h2><p>首先先给出三个个例子,思考一下结果应该是什么：</p>
+<h3 id="1"><a href="#1" class="headerlink" title="1:"></a>1:</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">int</span> a = <span class="number">128</span>;</div><div class="line"><span class="keyword">int</span> b = <span class="number">128</span>;</div><div class="line">System.out.println(a==b);</div></pre></td></tr></table></figure>
+<h3 id="2"><a href="#2" class="headerlink" title="2:"></a>2:</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">Integer a = <span class="number">128</span>;</div><div class="line">Integer b = <span class="number">128</span>;</div><div class="line">System.out.println(a==b);</div></pre></td></tr></table></figure>
+<h3 id="3"><a href="#3" class="headerlink" title="3:"></a>3:</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">Integer a = <span class="number">127</span>;</div><div class="line">Integer b = <span class="number">127</span>;</div><div class="line">System.out.println(a==b);</div></pre></td></tr></table></figure>
+<hr>
+<p>答案分别是：</p>
+<ol>
+<li>True</li>
+<li>False</li>
+<li>True</li>
+</ol>
+<hr>
+<p>为什么会出现这种现象，要从Java的语言特点说起。Java是面向对象的语言，Integer是一个类，继承Object。而int是基本数据类型，是面向过程留下的产物，是对Java面向对象的一种补充。</p>
+<h3 id="有了这个概念之后再回来看这三个例子："><a href="#有了这个概念之后再回来看这三个例子：" class="headerlink" title="有了这个概念之后再回来看这三个例子："></a>有了这个概念之后再回来看这三个例子：</h3><ul>
+<li>第一个例子中使用了int来定义a和b的类型，所以在执行a==b的时候，是在比较两个数据的值。128==128一定是True。</li>
+<li>而第二个例子中a和b分别是Integer类的实例， <code>Integer a = 128;</code> 等价于： <code>Integer a = new Integer(128);</code>  该语句执行的时候会创建一个新的对象。于是执行 <code>a==b</code> 的时候，a和b是两个对象，因此返回false。如果需要比较Integer的数值，应当将 <code>a==b</code> 替换为 <code>a.equals(b)</code> ，这样输出就会为True。</li>
+<li>第三个例子很有趣，它和例二的区别只是数值上小了1，结果却截然不同。原因是Java处理-128～127之间的Integer值时，会使用基本的数据类型int在内存中供重用，以提高程序运行效率。声明a和b的时候不会创建新的对象，因此a和b在内存中是相同的，故 <code>a==b</code> 返回True。</li>
+</ul>
+<h2 id="那怎么让第三个例子的输出和第二个例子一样呢？"><a href="#那怎么让第三个例子的输出和第二个例子一样呢？" class="headerlink" title="那怎么让第三个例子的输出和第二个例子一样呢？"></a>那怎么让第三个例子的输出和第二个例子一样呢？</h2><p>其实很简单，只要在声明的时候手动new一个对象就行：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">Integer a = <span class="keyword">new</span> Integer(<span class="number">127</span>);</div><div class="line">Integer b = <span class="keyword">new</span> Integer(<span class="number">127</span>);</div><div class="line">System.out.println(a==b);</div></pre></td></tr></table></figure>
+<p>程序会输出False，因为此时的a和b在内存中分别是两个不同的对象。</p>
+<h2 id="那么Java的垃圾回收会怎么处理呢？"><a href="#那么Java的垃圾回收会怎么处理呢？" class="headerlink" title="那么Java的垃圾回收会怎么处理呢？"></a>那么Java的垃圾回收会怎么处理呢？</h2><p>垃圾回收依旧遵循其原则——回收无法被获得的对象。</p>
+<p>还是用例子来说明：</p>
+<h3 id="1-1"><a href="#1-1" class="headerlink" title="1:"></a>1:</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">Integer i = <span class="number">128</span>;</div><div class="line">i = <span class="keyword">null</span>;</div></pre></td></tr></table></figure>
+<p>此例中对象i为空(null)，(Integer)128无法再被获得，因此被回收。</p>
+<h3 id="2-1"><a href="#2-1" class="headerlink" title="2:"></a>2:</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">Integer i = <span class="number">127</span>;</div><div class="line">i = <span class="keyword">null</span>;</div></pre></td></tr></table></figure>
+<p>此例中的i为(Integer)127，其储存于缓存中，即使i的值变为null，(Integer)127仍然可以被新声明的 <code>Integer j = 127;</code> 获得，因此不会被回收。</p>
+<hr>
+<h4 id="友情提醒："><a href="#友情提醒：" class="headerlink" title="友情提醒："></a>友情提醒：</h4><p>int为基本数据类型，不允许为空(null)。</p>
+]]></content>
+    </entry>
+    
+    <entry>
+      <title><![CDATA[各种语言的Hello World]]></title>
+      <url>http://start666.github.io/2017/02/13/first-post/</url>
+      <content type="html"><![CDATA[<p>第一篇博文那就从最基础的Hello World开始说起吧！</p>
+<p>本文列举了一些常用语言的Hello World程序，能对各种语言起到管中窥豹的效果，分别有：</p>
+<ul>
+<li><a href="#java">Java</a></li>
+<li><a href="#csharp">C#</a></li>
+<li><a href="#python">Python</a></li>
+<li><a href="#cpp">C/C++</a></li>
+<li><a href="#ruby">Ruby</a></li>
+<li><a href="#r">R</a></li>
+<li><a href="#js">JavaScript</a></li>
+<li><a href="#php">PHP</a></li>
+<li><a href="#objc">Objective C</a></li>
+<li><a href="#swift">Swift</a></li>
+</ul>
+<h2 id="Java"><a href="#Java" class="headerlink" title="Java"></a><a name="java">Java</a></h2><figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">HelloWorld</span></span></div><div class="line">&#123;</div><div class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span></span></div><div class="line">    &#123;</div><div class="line">        System.out.println(<span class="string">"Hello, World!"</span>);</div><div class="line">    &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p><a href="https://www.java.com" target="_blank" rel="external">Java</a>中，”public static void main(String[] args)”是整个程序的入口。System.out.println()是系统Console输出方法。</p>
+<h2 id="C"><a href="#C" class="headerlink" title="C#"></a><a name="csharp">C#</a></h2><figure class="highlight csharp"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title">HelloWorld</span></div><div class="line">&#123;</div><div class="line">   <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">Main</span>(<span class="params"></span>)</span></div><div class="line">   &#123;</div><div class="line">      System.Console.WriteLine(<span class="string">"Hello, World!"</span>);</div><div class="line">   &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p><a href="https://msdn.microsoft.com/en-us/library/67ef8sbd.aspx" target="_blank" rel="external">C#</a>作为微软用来对抗Java的工具，和Java的相似性非常高，也是以Main()方法作为程序的入口。System.Console.WriteLine()用作系统Console的输出。</p>
+<h2 id="Python"><a href="#Python" class="headerlink" title="Python"></a><a name="python">Python</a></h2><p><a href="https://www.python.org" target="_blank" rel="external">Python</a>由于历史版本的变更，存在两种print的方式，与正在运行的Python版本相关：</p>
+<h3 id="Python-2中"><a href="#Python-2中" class="headerlink" title="Python 2中"></a>Python 2中</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">print</span> <span class="string">'Hello, World!'</span></div></pre></td></tr></table></figure>
+<h3 id="Python-3中"><a href="#Python-3中" class="headerlink" title="Python 3中"></a>Python 3中</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">print(<span class="string">'Hello, World!'</span>)</div></pre></td></tr></table></figure>
+<p>Python程序结构简单清晰，不使用括号来区分代码块。好处是便于伪代码的实现，但需要注意每行前的空格数量相等才算一个代码块。</p>
+<h2 id="C-C"><a href="#C-C" class="headerlink" title="C/C++"></a><a name="cpp">C/C++</a></h2><h3 id="C-1"><a href="#C-1" class="headerlink" title="C"></a>C</h3><figure class="highlight c"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;stdio.h&gt;</span></span></div><div class="line"></div><div class="line">main()</div><div class="line">&#123;</div><div class="line">    <span class="built_in">printf</span>(<span class="string">"Hello, World!"</span>);</div><div class="line"></div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<h3 id="C-2"><a href="#C-2" class="headerlink" title="C++"></a>C++</h3><figure class="highlight cpp"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iostream&gt;</span></span></div><div class="line"></div><div class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</div><div class="line"></div><div class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">(<span class="keyword">int</span> argc, <span class="keyword">char</span> * argv[])</span></span></div><div class="line">&#123;</div><div class="line">    <span class="built_in">cout</span> &lt;&lt; <span class="string">"Hello, World!"</span> &lt;&lt; <span class="built_in">endl</span>;</div><div class="line">    <span class="keyword">return</span> <span class="number">0</span>;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p>C/C++的程序入口为main()，两者的区别是C没有对象，C++面向对象。</p>
+<h2 id="Ruby"><a href="#Ruby" class="headerlink" title="Ruby"></a><a name="ruby">Ruby</a></h2><figure class="highlight ruby"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">puts <span class="string">'Hello, World!'</span></div></pre></td></tr></table></figure>
+<p><a href="https://www.ruby-lang.org" target="_blank" rel="external">Ruby</a>语言的设计初衷就是为了让写程序的人更高兴，所以去除了上古语言中的许多繁文缛节，产生的效果就是一行代码就是一个Hello World程序。</p>
+<h2 id="R"><a href="#R" class="headerlink" title="R"></a><a name="r">R</a></h2><figure class="highlight r"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">print (<span class="string">"Hello, World!"</span>);</div></pre></td></tr></table></figure>
+<p>做数据挖掘必然离不开<a href="https://www.r-project.org" target="_blank" rel="external">R语言</a>，R语言强大的统计计算能力赋予了数据分析师们无限的可能，由于很大一部分人非计算机专业出身，因此一些常用的功能也必须简洁明了，易于使用。</p>
+<h2 id="JavaScript"><a href="#JavaScript" class="headerlink" title="JavaScript"></a><a name="js">JavaScript</a></h2><p><a href="https://www.javascript.com" target="_blank" rel="external">JavaScript</a>起初作为一种前端语言，在各大浏览器上流行起来，直接在浏览器中运行的特性丰富了我们的网页内容。随后而来的Node.JS更是让JavaScript脱离浏览器，直接运行在系统之上。</p>
+<h3 id="浏览器JavaScript"><a href="#浏览器JavaScript" class="headerlink" title="浏览器JavaScript"></a>浏览器JavaScript</h3><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">alert(<span class="string">'Hello, World!'</span>);</div></pre></td></tr></table></figure>
+<p>由于运行在浏览器上，此行代码会弹出警示框，显示Hello World。</p>
+<h3 id="Node-JS"><a href="#Node-JS" class="headerlink" title="Node.JS"></a>Node.JS</h3><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">console</span>.log(<span class="string">"Hello, World!"</span>);</div></pre></td></tr></table></figure>
+<p><a href="https://nodejs.org" target="_blank" rel="external">Node.JS</a>运行在系统上，此行代码会在Console输出Hello World。</p>
+<h2 id="PHP"><a href="#PHP" class="headerlink" title="PHP"></a><a name="php">PHP</a></h2><p><a href="http://www.php.net" target="_blank" rel="external">PHP</a>作为常用后端语言的一种，可以直接嵌入html的特性，使它获得不少好评，如今各大云平台均有对PHP的支持。</p>
+<figure class="highlight php"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="meta">&lt;?php</span></div><div class="line"></div><div class="line">    <span class="keyword">echo</span> <span class="string">'Hello, World!'</span>;</div><div class="line"><span class="meta">?&gt;</span></div></pre></td></tr></table></figure>
+<p>此段代码会在网页上显示Hello World。</p>
+<h2 id="Objective-C"><a href="#Objective-C" class="headerlink" title="Objective C"></a><a name="objc">Objective C</a></h2><p><a href="https://developer.apple.com/library/content/documentation/Cocoa/Conceptual/ProgrammingWithObjectiveC/Introduction/Introduction.html" target="_blank" rel="external">Objective C</a>作为苹果曾经的指定编程语言，随着苹果公司的火爆也跟着火爆起来，但是其繁琐的语法使许多初学者都望而却步。</p>
+<figure class="highlight objc"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#import <span class="meta-string">&lt;Foundation/Foundation.h&gt;</span></span></div><div class="line"></div><div class="line"><span class="keyword">int</span> main (<span class="keyword">int</span> argc, <span class="keyword">const</span> <span class="keyword">char</span> * argv[])</div><div class="line">&#123;</div><div class="line">        <span class="built_in">NSAutoreleasePool</span> *pool = [[<span class="built_in">NSAutoreleasePool</span> alloc] init];</div><div class="line">        <span class="built_in">NSLog</span> (<span class="string">@"Hello, World!"</span>);</div><div class="line">        [pool drain];</div><div class="line">        <span class="keyword">return</span> <span class="number">0</span>;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<h2 id="Swift"><a href="#Swift" class="headerlink" title="Swift"></a><a name="swift">Swift</a></h2><p>为了减轻程序员的学习成本，苹果公司于2014年正式发布了<a href="https://developer.apple.com/swift/" target="_blank" rel="external">Swift</a>语言，改语言的特点就是除去了很多多余的标记，甚至每行代码结尾的分号也可以不需要。相比较下，Swift的Hello World程序比Objective C缩短了不是一点点，大大增强了代码的可读性。</p>
+<figure class="highlight swift"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">#<span class="keyword">import</span> Foundation</div><div class="line"></div><div class="line"><span class="built_in">println</span>(<span class="string">"Hello, World!"</span>)</div></pre></td></tr></table></figure>
+<p>####后期还会添加更多语言，敬请期待 ：）</p>
+]]></content>
+    </entry>
+    
+  
+  
+</search>
